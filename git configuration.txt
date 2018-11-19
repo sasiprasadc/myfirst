@@ -1,0 +1,10 @@
+git config --global user.name sasiprasadc
+git config --global user.email sasiprasadc@gmail.com
+
+in cmd enter
+
+git init (then a message  Initialized empty Git repository in C:/Users/LENOVO/Desktop/baabtra/git/.git/
+
+
+git push origin master
+

@@ -1,0 +1,116 @@
+<html>
+	<head>
+
+		<meta charset="utf-8"/>
+		<title>MY PAGE</title>
+		<style type="text/css">
+			
+label{
+
+	color: red;
+}
+
+
+		</style>
+
+<script type="text/javascript">
+
+function check(){
+
+
+				var name = document.getElementById('name').value;
+				var label1 = document.getElementById('label1');
+				var label2 =document.getElementById('label2');
+				var label3 =document.getElementById('label3');
+				var label4 =document.getElementById('label4');
+				var label5 =document.getElementById('label5');
+				var label6 =document.getElementById('label6');
+				var addr=document.getElementById('addr').value;
+				var mail = document.getElementById('mail').value;
+				var mob = document.getElementById('mob').value;
+				var psw = document.getElementById('psw').value;
+				var cpsw = document.getElementById('cpsw').value;
+
+				if (name==""){
+					label1.innerHTML="Enter the name";
+				}	
+
+				if (addr=="") {
+
+					label2.innerHTML="Enter the address";
+				}
+				if (mail=="") {
+					
+					label3.innerHTML="Enter the e mail";
+				}
+				if (mob=="") {
+					label4.innerHTML="Enter the MOB-NUMBER";
+				}
+				if (psw=="") {
+
+					label5.innerHTML="Enter the password";
+				}
+				if (cpsw=="") {
+					label6.innerHTML="Enter the confirm password";	
+
+						return false;
+				}
+				else{
+					return true;
+				}
+
+}				
+</script>
+
+
+
+
+	</head>
+		<body bgcolor="#bbdefb">
+			<form action="login.html" method="post" onsubmit="return check();">
+				<table>
+					<tr>
+							
+										<td><center>student registration form</center></td>
+					</tr>
+					<tr> 
+							<td>NAME:</td>
+						<td>	<input type="text" name="name" size="30" maxlength="24" id="name"> <label id="label1"></label></td>
+						
+					</tr>	
+					<tr>	
+
+							<td>Personal address:</td>
+						<td >	<input type="text" name="" value="" size="30" maxlength="24" id="addr"><label id="label2"></label></td>
+					
+					</tr>
+
+					<tr> 
+							<td>E-MAIL:</td>
+						<td colspan="2">	<input type="text" name="" value="" size="30" maxlength="24" id="mail"><label id="label3"></label></td>
+					</tr>	
+			
+					<tr> 
+							<td>MOB-NUMBER:</td>
+						<td colspan="2">	<input type="text" name="" value="" size="30" maxlength="24" id="mob"><label id="label4"></label></td>
+					</tr>	
+					<tr>
+
+							<td>password:</td>
+						<td colspan="2">	<input type="password" name="" value="" size="30" maxlength="24" id="psw"><label id="label5"></label></td>
+					
+					</tr>
+					<tr> 
+							<td>confirm password:</td>
+						<td colspan="2">	<input type="password" name="" value="" size="30" maxlength="24" id="cpsw"><label id="label6"></label></td>
+
+					
+					</tr>
+				</table> 
+					<center> <input type="submit" value="submit form"> </center>
+
+					
+			</form>
+
+		</body>
+</html>			
